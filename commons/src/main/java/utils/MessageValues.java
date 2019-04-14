@@ -22,7 +22,7 @@ public class MessageValues {
     public static final String MONEY = "Your money points: ";
     public static final String NEW_LINE = "\n";
     public static final String SEPARATOR = " --- ";
-    public static final String LINE_SEPARATOR = "*********************************";
+    public static final String LINE_SEPARATOR = "******************************************************************************************************************";
     public static final String PRESS = "(Enter something here): ";
     public static final String INVALIDATE_VALUE_EXCEPTION = "Invalid value, bro! Try again!";
     public static final String CONGRATULATIONS = "CONGRATZZZZZ!!!!! YOU WIN!";
@@ -60,5 +60,35 @@ public class MessageValues {
 
     public static String ITEM_PRICE(int price, String additionalInfo) {
         return "You can buy an item for " + price + " money points, which one would you like?\n" + additionalInfo + "\n";
+    }
+
+    public static final String INTRO() {
+        StringBuilder sb = new StringBuilder("");
+        sb.append("\n" +
+                ",--------.,--.,--.   ,--.,------.    ,--.   ,--.  ,---.   ,-----.,--.  ,--.,--.,--.  ,--.,------.    ");
+        sb.append("\n");
+        sb.append("'--.  .--'|  ||   `.'   ||  .---'    |   `.'   | /  O  \\ '  .--./|  '--'  ||  ||  ,'.|  ||  .---' ");
+        sb.append("\n");
+        sb.append("   |  |   |  ||  |'.'|  ||  `--,     |  |'.'|  ||  .-.  ||  |    |  .--.  ||  ||  |' '  ||  `--,    ");
+        sb.append("\n");
+        sb.append("   |  |   |  ||  |   |  ||  `---.    |  |   |  ||  | |  |'  '--'\\|  |  |  ||  ||  | `   ||  `---.   ");
+        sb.append("\n");
+        sb.append("   `--'   `--'`--'   `--'`------'    `--'   `--'`--' `--' `-----'`--'  `--'`--'`--'  `--'`------'   ");
+        sb.append("\n");
+        sb.append("\n");
+        sb.append("    ,--.                                                                                    ,--.     ");
+        sb.append("\n");
+        sb.append(" .-,|  |,-.  ,-----.,--.  ,--.  ,---.  ,--.   ,--.   ,------.,--.  ,--. ,----.   ,------..-,|  |,-.  ");
+        sb.append("\n");
+        sb.append(" _\\ '  ' /_ '  .--./|  '--'  | /  O  \\ |  |   |  |   |  .---'|  ,'.|  |'  .-./   |  .---'_\\ '  ' /_  ");
+        sb.append("\n");
+        sb.append("(__      __)|  |    |  .--.  ||  .-.  ||  |   |  |   |  `--, |  |' '  ||  | .---.|  `--,(__      __) ");
+        sb.append("\n");
+        sb.append("  / .  . \\  '  '--'\\|  |  |  ||  | |  ||  '--.|  '--.|  `---.|  | `   |'  '--'  ||  `---. / .  . \\   ");
+        sb.append("\n");
+        sb.append(" `-'|  |`-'  `-----'`--'  `--'`--' `--'`-----'`-----'`------'`--'  `--' `------' `------'`-'|  |`-'  ");
+        sb.append("\n");
+        sb.append("    `--'                                                                                    `--'     ");
+        return sb.toString();
     }
 }

@@ -15,6 +15,8 @@ public class App {
 
     public static void main(String args[]) {
 
+        CommunicationUtils.printMessage(MessageValues.INTRO());
+
         Integer option = ScannerUtils.getValidateIntegerWithMessage(MessageValues.START_GAME_OPTION, 1, 2);
 
         Player player;
@@ -50,7 +52,6 @@ public class App {
         }
 
 
-
         game.play();
     }
 
@@ -80,6 +81,8 @@ public class App {
         EnumSet<ItemType> allTypes = EnumSet.allOf(ItemType.class);
         CommunicationUtils.printMessage(MessageValues.OBJECTIVE_INFO(allTypes.toString()));
     }
+
+
 
 
 }
